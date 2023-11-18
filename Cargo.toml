@@ -1,0 +1,9 @@
+[package]
+name = "YA_recon" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["Patrick Kilter <patrick.kilter@gmail.com>"]
+
+[[bin]]
+edition = "2018"
+name = "ya_recon"
+path = "src/main.rs"
