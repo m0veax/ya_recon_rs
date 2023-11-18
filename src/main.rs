@@ -17,14 +17,16 @@ fn read_args() -> EnvArgs {
     // Get the command-line arguments.
     let args: Vec<String> = env::args().collect();
 
-    // Check if at least two arguments are provided (the first argument is the program name).
+    // print while using Debug trait
+    println!("{:?}", args);
+
+    // Check if at least 4 arguments are provided (the first argument is the program name).
     if args.len() < 4 {
         eprintln!("Usage: {} <module> <mode> <target>", args[0]);
         std::process::exit(1);
     }
 
-    // Get the first and second arguments (index 1 and 2 in the `args` vector).
-    
+    // Get the arguments
     let selected_mode = args[1].clone();
     let selected_module = args[2].clone();
     let target = args[3].clone();
